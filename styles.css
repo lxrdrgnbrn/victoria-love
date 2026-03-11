@@ -145,6 +145,10 @@ h3 {
   text-align: center;
 }
 
+.reasons-heading {
+  margin-top: 36px;
+}
+
 .reasons {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr);
@@ -183,6 +187,57 @@ h3 {
   gap: 10px;
   font-size: 1.05rem;
   line-height: 1.4;
+}
+
+.favorites {
+  text-align: center;
+}
+
+.favorites-grid {
+  margin-top: 32px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.favorite-card {
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 22px;
+  padding: 22px 20px;
+  box-shadow: var(--shadow);
+  text-align: left;
+  min-height: 140px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.favorite-card h3 {
+  margin-bottom: 6px;
+}
+
+.favorite-value {
+  font-size: 1.1rem;
+  color: #6a4b53;
+  margin: 0;
+}
+
+.favorite-card.wide {
+  grid-column: 1 / -1;
+}
+
+.favorite-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.favorite-tags span {
+  background: var(--rose-100);
+  color: #6a3f4c;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 1rem;
 }
 
 .coda {
@@ -282,6 +337,10 @@ main, header, footer {
   .reason-list {
     padding: 24px 22px 16px;
   }
+
+  .favorites-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 @media (max-width: 600px) {
@@ -295,6 +354,10 @@ main, header, footer {
 
   .bubble {
     font-size: 1rem;
+  }
+
+  .favorites-grid {
+    grid-template-columns: 1fr;
   }
 }
 
