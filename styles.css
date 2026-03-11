@@ -193,6 +193,36 @@ h3 {
   text-align: center;
 }
 
+.letter {
+  text-align: center;
+}
+
+.letter-card {
+  max-width: 820px;
+  margin: 0 auto;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(255, 246, 240, 0.92));
+  border-radius: 28px;
+  padding: 40px 34px;
+  box-shadow: var(--shadow);
+  border: 1px solid rgba(214, 148, 168, 0.18);
+  text-align: left;
+  line-height: 1.7;
+  font-size: 1.1rem;
+}
+
+.letter-card h2 {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.letter-card p {
+  margin: 0 0 16px;
+}
+
+.letter-card p:last-child {
+  margin-bottom: 0;
+}
+
 .favorites-grid {
   margin-top: 32px;
   display: grid;
